@@ -63,7 +63,3 @@ model.save_pretrained(save_directory)
 
 tokenizer = AutoTokenizer.from_pretrained(save_directory)
 model = AutoModelForSequenceClassification.from_pretrained(save_directory)
-
-
-
-
