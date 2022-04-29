@@ -57,3 +57,13 @@ with torch.no_grad():
     labels = [model.config.id2label[label_id] for label_id in labels.tolist()]
     print(labels)
 
+save_directory = "saved"
+tokenizer.save_pretrained(save_directory)
+model.save_pretrained(save_directory)
+
+tokenizer = AutoTokenizer.from_pretrained(save_directory)
+model = AutoModelForSequenceClassification.from_pretrained(save_directory)
+
+
+
+
