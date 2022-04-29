@@ -1,0 +1,25 @@
+# type the below two lines into your terminal:
+# conda env create --file huggingface.yml
+# conda activate huggingface_tutorial
+
+name: huggingface_tutorial
+
+dependencies:
+  - python
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - scikit-learn-intelex
+  - jupyter
+  - ipython
+
+# to verify environments:
+# conda info --envs
+
+# to remove environment:
+# conda env remove -n huggingface_tutorial
+
+# If you update the `huggingface.yml` you can run the following to update the
+# environment with your changes:
+# conda env update --file huggingface.yml --prune
