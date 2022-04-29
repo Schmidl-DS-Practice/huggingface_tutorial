@@ -5,6 +5,8 @@
 name: huggingface_tutorial
 
 dependencies:
+  - pytorch
+  - transformers
   - python
   - numpy
   - pandas
